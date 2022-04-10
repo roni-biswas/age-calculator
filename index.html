@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age - Calculetor</title>
+
+    <!-- Custom css add -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="age-container">
+        <div class="head-section">
+            <h4>Age Calculetor</h4>
+        </div>
+        <form class="form" action="#">
+            <fieldset>
+                <legend>Enter your Bath Data</legend>
+                <div class="age-form">
+                    <div class="block">
+                        <label class="date" for="date">Date</label>
+                        <input type="text" name="date" id="date" placeholder="dd" minlength="1" maxlength="2" autocomplete="off" required>
+                    </div>
+
+                    <div class="block">
+                        <label class="month" for="month">Month</label>
+                        <input type="text" name="month" id="month" placeholder="mm" minlength="1" maxlength="2" autocomplete="off" required>
+                    </div>
+
+                    <div class="block">
+                        <label class="year" for="year">Year</label>
+                        <input type="text" name="year" id="year" placeholder="yyyy" minlength="4" maxlength="4" autocomplete="off" required>
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit" class="button" id="button">Submit</button>
+                    <button class="button clear-btn" id="clear-btn">clear</button>
+                </div>
+
+            </fieldset>
+        </form>
+
+        <!-- Display Current age is here -->
+        <div class="age-visible-container">
+            <p>Your age is :</p>
+            <div class="age-visible">
+                <div class="showing-age">
+                    <span>Years</span>
+                    <div class="s-year counter" get-target="year">
+                        <!-- value -->
+                        00
+                    </div>
+                </div>
+                <div class="showing-age">
+                    <span>Months</span>
+                    <div class="s-month counter" get-target="month">
+                        <!-- value -->
+                        00
+                    </div>
+                </div>
+                <div class="showing-age">
+                    <span>Days</span>
+                    <div class="s-day counter" get-target="day">
+                        <!-- value -->
+                        00
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Custom js -->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
