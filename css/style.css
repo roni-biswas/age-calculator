@@ -153,13 +153,53 @@ input[type=text]:focus {
 
 /* Mobile Responsive */
 
-@media screen and (max-width: 540px) {
+@media (min-width: 460px) and (max-width: 534px) {
     .age-container {
         border: none;
-        height: 100vh;
-        width: 100%;
+        box-shadow: none;
+        width: 80%;
+        margin: auto;
+    }
+    .age-form {
+        display: grid;
+        grid-template-columns: auto 1fr;
     }
     .button-container {
         justify-content: center;
+    }
+    fieldset {
+        width: 80%;
+        margin: auto;
+    }
+    .showing-age {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .showing-age .counter {
+        min-width: 75px;
+    }
+}
+
+@media screen and (max-width: 459px) {
+    .age-container {
+        border: none;
+        box-shadow: none;
+        width: 90%;
+        margin: auto;
+    }
+    .age-form {
+        display: grid;
+        grid-template-columns: unset;
+    }
+    fieldset {
+        width: 90%;
+        margin: auto;
+    }
+    .showing-age {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .showing-age .counter {
+        min-width: 75px;
     }
 }
