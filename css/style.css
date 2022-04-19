@@ -154,6 +154,10 @@ input[type=text]:focus {
 /* Mobile Responsive */
 
 @media (min-width: 460px) and (max-width: 534px) {
+    body {
+        height: 100%;
+        align-items: start;
+    }
     .age-container {
         border: none;
         box-shadow: none;
@@ -181,6 +185,10 @@ input[type=text]:focus {
 }
 
 @media screen and (max-width: 459px) {
+    body {
+        height: 100%;
+        align-items: start;
+    }
     .age-container {
         border: none;
         box-shadow: none;
