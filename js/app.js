@@ -74,16 +74,19 @@ function ageCalculator(event) {
 
         }
         updateCounter();
+        
+        // for clear input Field
+        const clrbtn = document.getElementById('clear-btn');
+        clrbtn.classList.add('active');
+
+        clrbtn.addEventListener('click', function() {
+            document.querySelector("form").reset();
+            this.classList.remove('active');
+            counter.innerText = "00";
+        });
+        
     });
 
-    // for clear input Field
-    const clrbtn = document.getElementById('clear-btn');
-    clrbtn.classList.add('active');
-
-    clrbtn.addEventListener('click', function() {
-        document.querySelector("form").reset();
-        this.classList.remove('active');
-    });
 
 
 }
