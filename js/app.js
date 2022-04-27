@@ -13,7 +13,7 @@ function ageCalculator(event) {
     var birthMonth = document.getElementById('month').value;
     var birthYear = document.getElementById('year').value;
 
-    if (birthDate == '' && birthMonth == '' && birthYear == '') {
+    if (birthDate == '' || birthMonth == '' || birthYear == '') {
         alert("Name must be filled out");
         return false;
     }
